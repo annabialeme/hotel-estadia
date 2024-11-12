@@ -35,3 +35,11 @@ INSERT INTO quartos(numero_quarto, tipo_quarto) VALUES
 (4, 'Standard'),
 (15, 'Deluxo'),
 (35, 'Quarto Casal');
+
+
+INSERT INTO reservas (data_inicio_reserva,horario_reserva, data_termino_reserva, id_hospede, id_quarto, reserva_ativa) VALUES
+('2024-06-02', '20:00', '2024-06-04', 1, 1,'false'),
+('2024-06-03', '21:00', '2024-06-05', 2, 2,'true'),
+('2024-06-04', '19:00', '2024-06-06', 3, 3,'false'),
+('2024-06-05', '19:00', '2024-06-07', 4, 4,'true');
+
