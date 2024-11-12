@@ -29,3 +29,9 @@ INSERT INTO hospedes(nome, email) VALUES
 ('Ruby Bell', 'ruby.bell@gmail.com'),
 ('Lydia Beaufort', 'lydia.beaufort@gmail.com'),
 ('Lin Wang', 'lin.wang@gmail.com');
+
+INSERT INTO quartos(numero_quarto, tipo_quarto) VALUES
+(50, 'Duplo Solteiro'),
+(4, 'Standard'),
+(15, 'Deluxo'),
+(35, 'Quarto Casal');
