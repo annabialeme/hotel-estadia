@@ -43,3 +43,25 @@ INSERT INTO reservas (data_inicio_reserva,horario_reserva, data_termino_reserva,
 ('2024-06-04', '19:00', '2024-06-06', 3, 3,'false'),
 ('2024-06-05', '19:00', '2024-06-07', 4, 4,'true');
 
+SELECT 
+  r.id_reserva,
+  h.nome AS hospede,
+  h.email,
+  q.numero_quarto AS quarto,
+  q.tipo_quarto,
+  r.data_inicio_reserva,
+  r.horario_reserva,
+  r. data_termino_reserva
+
+FROM
+  reservas r
+JOIN
+  quartos q ON r.id_quarto = q.id_quarto
+JOIN
+  hospedes h ON r.id_hospede = h.id_hospede
+WHERE
+  r.data_termino_reserva <= '2024-06-05';
+
+
+
+
