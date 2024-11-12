@@ -23,3 +23,9 @@ reserva_ativa BOOLEAN NOT NULL,
 CONSTRAINT fk_hospede FOREIGN KEY (id_hospede) REFERENCES hospedes(id_hospede),
 CONSTRAINT fk_quarto FOREIGN KEY (id_quarto) REFERENCES quartos(id_quarto)
 );
+
+INSERT INTO hospedes(nome, email) VALUES 
+('James Beaufort', 'james.beaufort@gmail.com'),
+('Ruby Bell', 'ruby.bell@gmail.com'),
+('Lydia Beaufort', 'lydia.beaufort@gmail.com'),
+('Lin Wang', 'lin.wang@gmail.com');
