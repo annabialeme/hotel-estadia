@@ -78,4 +78,14 @@ LEFT JOIN
     hospedes h ON r.id_hospede = h.id_hospede;
 
 
+SELECT
+  r.id_reserva, 
+  q.numero_quarto AS quarto_sem_reserva, 
+  r.reserva_ativa
 
+FROM 
+  reservas r 
+JOIN 
+  quartos q ON r.id_quarto = q.id_quarto 
+WHERE
+  r.reserva_ativa = false; 
