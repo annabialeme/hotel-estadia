@@ -63,5 +63,19 @@ WHERE
   r.data_termino_reserva <= '2024-06-05';
 
 
+SELECT 
+  r.id_reserva,
+  h.nome AS hospede,
+  h.email,
+  q.numero_quarto AS quarto,
+  q.tipo_quarto
+
+FROM
+  quartos q
+LEFT JOIN
+  reservas r ON  q.id_quarto = r.id_quarto
+LEFT JOIN 
+    hospedes h ON r.id_hospede = h.id_hospede;
+
 
 
