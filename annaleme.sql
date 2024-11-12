@@ -3,3 +3,10 @@ id_hospede SERIAL PRIMARY KEY,
 nome VARCHAR(100) NOT NULL,
 email VARCHAR(100) UNIQUE NOT NULL
 );
+
+
+CREATE TABLE quartos (
+id_quarto SERIAL PRIMARY KEY,
+numero_quarto DECIMAL (5,2) UNIQUE NOT NULL,
+tipo_quarto VARCHAR (100)
+);
